@@ -43,8 +43,18 @@ let comando = "create table author (id number, name string, age number, city str
 
 //Resposta #2 usando expressões regular
 
-const regexp = /^create table (\w+)(.\S)(.+)(.)/;
-let result = regexp.exec(comando);
-let tableName = result[1];
-let columns = result[3].split(",").map(item =>item.trimStart())
-console.log(`The table name is ${tableName} and column names are : ${columns.join(", ")}`)
+// const regexp = /^create table (\w+)(.\S)(.+)(.)/;
+// let result = regexp.exec(comando);
+// let tableName = result[1];
+// let columns = result[3].split(",").map(item =>item.trimStart())
+// console.log(`The table name is ${tableName} and column names are : ${columns.join(", ")}`)
+
+//Resposta #3 usando expressões regular Resolvido pelo Professor
+
+const regexp = /create table (\w+) \((.+)\)/;
+const parsedComando = comando.match(regexp);
+const tableName = parsedComando[1];
+let columns = parsedComando[2];
+columns = columns.split(", ");
+console.log(tableName)
+console.log(columns)
