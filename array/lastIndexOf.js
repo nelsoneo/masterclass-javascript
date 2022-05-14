@@ -11,7 +11,6 @@
 */
 
 
-const language = ['Python', 'JavaScript', 'Java','SmallTalk', 'C++', 'C#'];
+const language = ['Python', 'JavaScript', 'Java'];
 
-
-console.log(language.join('; '));
+console.log(language.lastIndexOf('Python'));

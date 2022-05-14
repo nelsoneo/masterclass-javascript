@@ -13,5 +13,6 @@
 
 const language = ['Python', 'JavaScript', 'Java','SmallTalk', 'C++', 'C#'];
 
-
-console.log(language.join('; '));
+// const result = language.slice(2)
+const result = language.slice(2, 4) //end - 1
+console.log(result);

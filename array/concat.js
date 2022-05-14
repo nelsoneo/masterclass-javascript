@@ -11,7 +11,8 @@
 */
 
 
-const language = ['Python', 'JavaScript', 'Java','SmallTalk', 'C++', 'C#'];
+const language = ['Python', 'JavaScript', 'Java'];
+const ooLanguage = ['SmallTalk', 'C++', 'C#']
 
-
-console.log(language.join('; '));
+const languages = [].concat(language, ooLanguage) //retorna um novo array
+console.log(languages)
