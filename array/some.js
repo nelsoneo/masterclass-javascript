@@ -27,6 +27,5 @@ const frameworks = [
     }
 ]
 
-const result = frameworks.reduce((total, item) => {return total + item.contributors},0)
-
-console.log(result1);
+const result = frameworks.some(item => item.name.includes('.js'));
+console.log(result);

@@ -27,6 +27,10 @@ const frameworks = [
     }
 ]
 
-const result = frameworks.reduce((total, item) => {return total + item.contributors},0)
+// const result = frameworks.filter((item) => {
+//     return item.contributors < 1000;
+// })
 
-console.log(result1);
+const result = frameworks.filter(item => item.contributors < 1000)
+
+console.log(result)

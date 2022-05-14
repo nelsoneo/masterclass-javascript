@@ -29,4 +29,4 @@ const frameworks = [
 
 const result = frameworks.reduce((total, item) => {return total + item.contributors},0)
 
-console.log(result1);
+console.log(result);

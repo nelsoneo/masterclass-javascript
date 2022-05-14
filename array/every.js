@@ -27,6 +27,6 @@ const frameworks = [
     }
 ]
 
-const result = frameworks.reduce((total, item) => {return total + item.contributors},0)
-
+const result = frameworks.every(item => item.name.includes('.js')); //true
+const result1 = frameworks.every(item => item.contributors > 1000); //false
 console.log(result1);

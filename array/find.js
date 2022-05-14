@@ -27,6 +27,5 @@ const frameworks = [
     }
 ]
 
-const result = frameworks.reduce((total, item) => {return total + item.contributors},0)
-
-console.log(result1);
+const result = frameworks.find(item => item.name === 'Angular.js');
+console.log(result);
